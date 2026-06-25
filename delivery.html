@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>The Snack Box</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="logo">The Snack Box</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="delivery.html">Delivery</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+   <header class="banner">
+    <!-- Banner Image -->
+    <img src="delv.jpeg" alt="Cake Banner" class="banner-img">
+    <!-- Banner Text -->
+    <div class="banner-text">
+      
+    </div>
+  </header>
+
+  <!-- Delivery Section -->
+  <section class="delivery">
+    <h2>Delivery</h2>
+    <p>We deliver cakes across Kigali City within 24 hours of your order. Fast, safe, and reliable service guaranteed.</p>
+
+    <!-- Delivery Form -->
+    <form>
+      <!-- Auto-filled item from Services -->
+      <input type="text" id="orderItem" name="orderItem" placeholder="Order Item" readonly>
+
+      <!-- Customer details -->
+      <input type="text" name="fullName" placeholder="Full Name" required>
+      <input type="text" name="address" placeholder="Delivery Address" required>
+      <input type="tel" name="phone" placeholder="Phone Number" required>
+
+      <!-- Submit -->
+      <button type="submit">Confirm Order</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer><p>©2026 The Snack Box/p></footer>
+
+  <!-- Script to auto-fill order item -->
+  <script>
+    // Get item from URL (e.g., delivery.html?item=Chocolate%20Cake)
+    const params = new URLSearchParams(window.location.search);
+    const item = params.get("item");
+
+    // Auto-fill the order field if item exists
+    if(item) {
+      document.getElementById("orderItem").value = item;
+    }
+  </script>
+</body>
+</html>
