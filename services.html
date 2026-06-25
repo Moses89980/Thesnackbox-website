@@ -2,98 +2,83 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>The Snack Box</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services | Moses</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Navigation -->
-  <nav class="navbar">
-    <div class="logo">The Snack Box</div>
-    <ul class="nav-links">
+  <nav>
+    <h1 class="logo">
+      <span class="logo-part logo-kides">Kides</span>
+      <span class="logo-part logo-media">Media</span>
+      <span class="logo-part logo-hub">Hub</span>
+    </h1>
+    <ul>
       <li><a href="index.html">Home</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="delivery.html">Delivery</a></li>
       <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
-  
-   <header class="banner">
-    <!-- Banner Image -->
-    <img src="Services.jpeg" alt="Cake Banner" class="banner-img">
-    <!-- Banner Text -->
-    <div class="banner-text">
-      
-    </div>
-  </header>
 
-  <!-- Services Grid -->
-  <section class="services">
-    <h2>Our Cakes & Services</h2>
-    <div class="service-grid">
-      <!-- Example Item -->
-      <div class="service-item">
-        <img src="chocolate cake.jpg" alt="Chocolate Cake">
-        <h3>Chocolate Cake</h3>
-        <p>$15</p>
-        <a href="delivery.html?item=Chocolate%20Cake" class="order-btn">Order Now</a>
+  <main class="page-shell">
+    <a href="index.html" class="back-link">← Back home</a>
+    <section class="page-card services-page">
+      <h2>Services</h2>
+      <p>I provide creative and technical solutions that help individuals, brands, and businesses stand out with style, clarity, and impact.</p>
+      <div class="services-grid">
+        <article class="service-card">
+          <div class="service-icon">🌐</div>
+          <h3>Web Design</h3>
+          <p>Modern, responsive websites that look great on every screen.</p>
+        </article>
+        <article class="service-card">
+          <div class="service-icon">🎨</div>
+          <h3>Graphics Design</h3>
+          <p>Clean and attractive designs for logos, posters, banners, and branding.</p>
+        </article>
+        <article class="service-card">
+          <div class="service-icon">🖨️</div>
+          <h3>Printing Services</h3>
+          <p>High-quality print-ready materials such as calendars, banners, flyers, and promotional items.</p>
+        </article>
+        <article class="service-card">
+          <div class="service-icon">🎬</div>
+          <h3>Video Production</h3>
+          <p>Storytelling through video editing, motion content, and polished visuals.</p>
+        </article>
+        <article class="service-card">
+          <div class="service-icon">📱</div>
+          <h3>Social Media Content</h3>
+          <p>Engaging content ideas and visuals tailored for online audiences.</p>
+        </article>
+        <article class="service-card">
+          <div class="service-icon">🧠</div>
+          <h3>Branding & Identity</h3>
+          <p>Creative brand concepts, visual identity, and consistent design systems for businesses.</p>
+        </article>
+        <article class="service-card">
+          <div class="service-icon">🎥</div>
+          <h3>Cinematography</h3>
+          <p>Professional visual storytelling with attention to lighting, framing, and mood.</p>
+        </article>
+        <article class="service-card">
+          <div class="service-icon">✍️</div>
+          <h3>Script Writing</h3>
+          <p>Clear and engaging scripts for videos, promos, short films, and content series.</p>
+        </article>
+        <article class="service-card">
+          <div class="service-icon">📷</div>
+          <h3>Camera Operation</h3>
+          <p>Skilled camera handling for shoots, interviews, events, and creative productions.</p>
+        </article>
       </div>
+    </section>
+  </main>
 
-      <div class="service-item">
-        <img src="cake2.jpg" alt="Vanilla Cake">
-        <h3>Vanilla Cake</h3>
-        <p>$12</p>
-        <a href="delivery.html?item=Vanilla%20Cake" class="order-btn">Order Now</a>
-      </div>
-
-      <div class="service-item">
-        <img src="cake3.jpg" alt="Red Velvet Cake">
-        <h3>Red Velvet Cake</h3>
-        <p>$18</p>
-        <a href="delivery.html?item=Red%20Velvet%20Cake" class="order-btn">Order Now</a>
-      </div>
-
-      <div class="service-item">
-        <img src="cake4.jpg" alt="Fruit Cake">
-        <h3>Fruit Cake</h3>
-        <p>$14</p>
-        <a href="delivery.html?item=Fruit%20Cake" class="order-btn">Order Now</a>
-      </div>
-
-      <!-- Add more items until you reach 16 -->
-      <!-- Example for row 2 -->
-      <div class="service-item">
-        <img src="cupcake1.webp" alt="Cupcakes">
-        <h3>Cupcakes (6 pcs)</h3>
-        <p>$10</p>
-        <a href="delivery.html?item=Cupcakes" class="order-btn">Order Now</a>
-      </div>
-
-      <div class="service-item">
-        <img src="cheese cake.webp" alt="Cheesecake">
-        <h3>Cheesecake</h3>
-        <p>$16</p>
-        <a href="delivery.html?item=Cheesecake" class="order-btn">Order Now</a>
-      </div>
-
-      <div class="service-item">
-        <img src="BROWNIES.jpg" alt="Brownies">
-        <h3>Brownies</h3>
-        <p>$9</p>
-        <a href="delivery.html?item=Brownies" class="order-btn">Order Now</a>
-      </div>
-
-      <div class="service-item">
-        <img src="donuts.jpeg" alt="Donuts">
-        <h3>Donuts (6 pcs)</h3>
-        <p>$11</p>
-        <a href="delivery.html?item=Donuts" class="order-btn">Order Now</a>
-      </div>
-
-      <!-- Continue until you have 16 items -->
-    </div>
-  </section>
-
-  <footer><p>©2026 The Snack Box</p></footer>
+  <footer class="site-footer">
+    <p>© 2026 Kides Media Hub. All rights reserved.</p>
+  </footer>
 </body>
 </html>

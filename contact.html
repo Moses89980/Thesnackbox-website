@@ -2,64 +2,83 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>CThe Snack Box</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Moses</title>
   <link rel="stylesheet" href="style.css">
-  <!-- Font Awesome CDN for icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-  <!-- Navigation -->
-  <nav class="navbar">
-    <div class="logo">The Snack Box</div>
-    <ul class="nav-links">
+  <nav>
+    <h1 class="logo">
+      <span class="logo-part logo-kides">Kides</span>
+      <span class="logo-part logo-media">Media</span>
+      <span class="logo-part logo-hub">Hub</span>
+    </h1>
+    <ul>
       <li><a href="index.html">Home</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="delivery.html">Delivery</a></li>
       <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
 
-  <!-- Banner -->
-  <header class="banner">
-    <img src="contact.jpeg" alt="Cake Banner" class="banner-img">
-    <div class="banner-text">
-      
-    </div>
-  </header>
+  <main class="page-shell">
+    <a href="index.html" class="back-link">← Back home</a>
+    <section class="page-card contact-card">
+      <div class="contact-layout">
+        <div class="contact-info-panel">
+          <div class="contact-image-wrap">
+            <img src="tuck.jpeg" alt="Moses portrait" class="contact-image">
+          </div>
+          <h2>Contact Me</h2>
+          <p><strong>Email:</strong> mosestucker4@gmail.com</p>
+          <p><strong>Phone:</strong> +250 798 655 376</p>
+          <p><strong>WhatsApp:</strong> +231 778 473 582</p>
+          <p><strong>WhatsApp:</strong> +231 888 146 541</p>
+          <div class="social-links">
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="https://accounts.snapchat.com/" target="_blank" rel="noopener noreferrer">Snapchat</a>
+          </div>
+        </div>
 
-  <!-- Contact Section -->
-  <section class="contact">
-    <h2>Contact Us</h2>
-    <p>Email: orders@sweetcakes.com</p>
-    <p>Phone: +250 788 555 123</p>
+        <div class="contact-form-panel">
+          <h3>Get in Touch</h3>
+          <p>Share your idea, project request, or question below and I’ll get back to you soon.</p>
+          <form class="contact-form" action="https://formsubmit.co/ajax/mosestucker4@gmail.com" method="POST">
+            <input type="hidden" name="_subject" value="New message from Moses portfolio website">
+            <input type="hidden" name="_captcha" value="false">
+            <div class="form-row">
+              <label>
+                First Name
+                <input type="text" name="firstName" placeholder="First name" required>
+              </label>
+              <label>
+                Last Name
+                <input type="text" name="lastName" placeholder="Last name" required>
+              </label>
+            </div>
+            <label>
+              Email
+              <input type="email" name="email" placeholder="your@email.com" required>
+            </label>
+            <label>
+              Phone Number
+              <input type="tel" name="phone" placeholder="+250 798 655 376">
+            </label>
+            <label>
+              What can we do for you?
+              <textarea name="message" rows="6" placeholder="Write your message here..." required></textarea>
+            </label>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
 
-    <!-- Social Links with Icons -->
-    <div class="social-links">
-      <a href="https://www.facebook.com/yourpage" target="_blank">
-        <i class="fab fa-facebook"></i> Facebook
-      </a>
-      <a href="https://wa.me/250788555123" target="_blank">
-        <i class="fab fa-whatsapp"></i> WhatsApp
-      </a>
-      <a href="https://www.instagram.com/yourpage" target="_blank">
-        <i class="fab fa-instagram"></i> Instagram
-      </a>
-      <a href="mailto:orders@sweetcakes.com">
-        <i class="fas fa-envelope"></i> Email
-      </a>
-    </div>
-
-    <!-- Contact Form -->
-    <form>
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea placeholder="Your Message"></textarea>
-      <button type="submit">Send</button>
-    </form>
-  </section>
-
-  <!-- Footer -->
-  <footer><p>©2026 The Snack Box</p></footer>
+  <footer class="site-footer">
+    <p>© 2026 Kides Media Hub. All rights reserved.</p>
+  </footer>
 </body>
 </html>
